@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <input type="file" id="import-file" accept=".txt" onchange="importerQuestions(event)">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Questions</title>
+    <title>Paramètres</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
-        <h1>Liste des Questions</h1>
+        <h1>Paramètres</h1>
     </header>
-    <ul id="questions-list">
-        <!-- Les questions seront ajoutées ici dynamiquement -->
-    </ul>
+    
+    <div>
+        <label for="toggle-sound">Activer le son :</label>
+        <input type="checkbox" id="toggle-sound" onchange="toggleSound()">
+    </div>
+
     <button onclick="retourAccueil()">Retour</button>
 
     <script src="../script.js"></script>
